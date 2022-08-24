@@ -4,7 +4,7 @@
     var randomChallengeBuffer = new Uint8Array(32);
     window.crypto.getRandomValues(randomChallengeBuffer);
 
-    var base64id = 'MIIBkzCCATigAwIBAjCCAZMwggE4oAMCAQIwggGTMII='
+    //var base64id = 'MIIBkzCCATigAwIBAjCCAZMwggE4oAMCAQIwggGTMII='
     var idBuffer = Uint8Array.from(window.atob(base64id), c=>c.charCodeAt(0))
 
     var publicKey = {
